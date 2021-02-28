@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon's -->
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/img/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Favicon's -->
+  
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <title>Шпора ХДПКшника</title>
+</head>
+
+<body>
+  <header>
+    <p></p>
+    <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+    <div class="menu_toggle-wrap">
+      <!-- <i class="fa fa-angle-left menu_toggle" aria-hidden="true"></i> -->
+      <i class="fa fa-angle-down menu_toggle animate__animated animate__fadeInDown wow" aria-hidden="true" data-wow-delay="0.2s"></i>
+    </div>
+  </header>
+  <section>
+    <div class="table_wrapper">
+      <img src="assets/img/person.png" alt="" class="person_img animate__animated animate__fadeInLeft wow" data-wow-delay="0.2s">
+      <h1 class="animate__animated animate__zoomIn wow" data-wow-delay="0.2s">Расписание</h1>
+      <div class="choose">
+        <div class="select animate__animated animate__fadeInLeft wow" data-wow-delay="0.2s">
+          <select name="group" id="group" onchange="getSelectGroup();">
+              <option disabled selected>Група</option>
+              <option value="КМ">КМ</option>
+              <option value="ИС">ИС</option>
+          </select>
+        </div>
+        <div class="select animate__animated animate__fadeInRight wow" data-wow-delay="0.2s">
+          <select name="course" id="course" onchange="getSelectCourse();">
+            <option disabled selected>Курс</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="footer animate__animated animate__fadeInUp wow" data-wow-delay="0.2s">
+      <!-- <a href="">
+        <img src="assets/img/telegram.png" alt="">
+      </a> -->
+      <p>Created by Mamba Group <img src="assets/img/mamba-logo.png" alt=""></p>
+    </div>
+  </section>
+  
+  
+  <!-- Menu toggle -->
+  <div class="grey-bg"></div>
+  <div class="menu_wrap">
+    <div class="menu">
+      <img src="assets/img/phone.png" alt="" class="phone">
+      <div class="close">
+        <input type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden">
+        <label for="checkbox3">
+          <div class="hamburger hamburger3">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+            <span class="bar bar4"></span>
+          </div>
+        </label>
+      </div>
+      <div class="menu_links">
+        <a href="videos.html" class="menu__item"><img src="assets/img/check.png" alt=""> Видеоуроки</a>
+        <a href="table.html" class="menu__item"><img src="assets/img/check.png" alt=""> Расписание</a>
+        <a href="literature.html" class="menu__item"><img src="assets/img/check.png" alt=""> Литература</a>
+      </div>
+    </div>
+  </div>
+ 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/247589c3ba.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="assets/js/script.js"></script>
+
+  <script>
+    function getSelectGroup() {
+      let selectedGroup = document.getElementById("group").value;
+      let selectedGroupText = document.getElementById("group").innerText;
+      console.log(selectedGroup);
+    }
+    getSelectGroup();
+
+    function getSelectCourse() {
+      let selectedCourse = document.getElementById("course").value;
+      let selectedCourseText = document.getElementById("course").innerText;
+      console.log(selectedCourse);
+    }
+    getSelectCourse();
+    
+    if (selectedGroupText === "КМ" && selectedCourseText == "3") {
+      console.log("Привет");
+    }
+  </script>
+</body>
+</html>
