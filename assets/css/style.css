@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "comicbd";
+  font-family: "comic bold";
   font-display: swap;
   src: url("../fonts/comicbd.woff") format("woff"), url("../fonts/comicbd.woff2") format("woff2");
   font-weight: 700;
@@ -103,7 +103,7 @@ h6 {
 }
 
 * {
-  font-family: 'Comic Sans MS', serif;
+  font-family: 'Roboto', sans-serif;
   color: #fff;
 }
 
