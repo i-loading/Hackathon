@@ -1014,6 +1014,12 @@ h1 {
   }
 }
 
+@media screen and (max-width: 720px) {
+  .overflow_body {
+    overflow: scroll;
+  }
+}
+
 @media screen and (max-width: 700px) {
   body {
     background-size: 550%;
