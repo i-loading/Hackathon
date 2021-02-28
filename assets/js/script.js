@@ -39,10 +39,10 @@ $(document).ready(function () {
     $('body').css("overflow", "hidden");
 
     $('.arduino, .kompas').css("z-index", "-1");
+    $('.folders').css("z-index", "-1");
 
     // $('.owl-carousel_arduino, .owl-carousel_kompas').css("z-index", "-1");
     // $('.slider_wrapper').css("z-index", "-1");
-    // $('.folders').css("z-index", "-1");
     // $('.table_wrapper').css("z-index", "-1");
   });
   $('.close').click(function (e) {
@@ -60,11 +60,11 @@ $(document).ready(function () {
     $('body').css("overflow", "auto");
     
     $('.arduino, .kompas').css("z-index", "10");
+    $('.folders').css("z-index", "10");
 
     // $('.menu_wrapper').css("z-index", "-1");
     // $('.menu_wrapper-table').css("z-index", "-1");
     // $('.owl-carousel_arduino, .owl-carousel_kompas').css("z-index", "10");
-    // $('.folders').css("z-index", "10");
     // $('.choose').css("z-index", "10000");
     // $('.table_wrapper').css("z-index", "100000");
     // $('.select').css("z-index", "100000");
